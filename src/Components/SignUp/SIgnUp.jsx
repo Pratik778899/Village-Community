@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./SignUp.css";
-import userData from "../../Database/UserData";
 
 const SignUp = () => {
   const [mail, setMail] = useState("");

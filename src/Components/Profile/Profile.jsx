@@ -12,7 +12,7 @@ const Profile = props => {
 
   let handLogout = () => {
     localStorage.removeItem("Loggedin");
-    navigate("/");
+    props.handelLogout();
   };
 
   return (

@@ -28,6 +28,7 @@ const Login = props => {
         alert("Login Successfull");
 
         localStorage.setItem("Loggedin", JSON.stringify(extUser));
+        // props.setLoginStatus(true);
         props.handleLogin();
       } else {
         alert("Password Is Wrong");

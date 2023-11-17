@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./Business.css";
 
 class Business extends Component {
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+  //   super(props);
+  // }
 
   render() {
     const { Ptitle, Pimg, Pcontact, onAddToCart } = this.props;

@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./Worker.css";
 
 class Worker extends Component {
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+  //   super(props);
+  // }
 
   render() {
     const { Wimg, Wname, Wcontact, Wprice, Wlocation, onHire } = this.props;

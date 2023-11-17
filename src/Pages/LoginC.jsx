@@ -7,6 +7,7 @@ const LoginC = props => {
 
   const handleLogin = () => {
     props.setLoginStatus(true);
+    props.handleLogin();
     navigate("/");
   };
 

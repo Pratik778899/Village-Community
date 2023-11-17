@@ -11,13 +11,21 @@ import Weather from "./Components/Weather/Weather";
 import News from "./Components/News/News";
 import LoginC from "./Pages/LoginC";
 import SignUpC from "./Pages/SignUpC";
-import Profile from "./Components/Profile/Profile";
+import ProfileC from "./Pages/ProfileC";
 import Cart from "./Components/Cart/Cart";
 import BusinessItem from "./Components/Business/BusinessItem";
 import WorkerItem from "./Components/Worker/WorkerItem";
 
 const App = () => {
   const [LoginStatus, setLoginStatus] = useState(false);
+
+   const handleLogin = () => {
+     setLoginStatus(true);
+   };
+
+   const handelLogout = ()=>{
+    setLoginStatus(false)
+   }
 
   const existingUser = JSON.parse(localStorage.getItem("Loggedin")) || {};
 
@@ -44,11 +52,28 @@ const App = () => {
               )
             }
           />
-          <Route path="/Login" element={<LoginC setLoginStatus={setLoginStatus}/>} />
+          <Route
+            path="/Login"
+            element={
+              <LoginC
+                setLoginStatus={setLoginStatus}
+                handleLogin={handleLogin}
+              />
+            }
+          />
           <Route path="/SignUp" element={<SignUpC />} />
           <Route
             path="/Profile"
-            element={existingUser ? <Profile /> : <Navigate to="/Login" />}
+            element={
+              existingUser ? (
+                <ProfileC
+                  setLoginStatus={setLoginStatus}
+                  handelLogout={handelLogout}
+                />
+              ) : (
+                <Navigate to="/Login" />
+              )
+            }
           />
           <Route
             path="/Cart"
