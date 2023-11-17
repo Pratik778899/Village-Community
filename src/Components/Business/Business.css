@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#Business-container {
+    border-radius: 5px;
+    border: solid 1px black;
+    display: inline-block;
+    background-color: #11281b;
+    color: white;
+}
+
+#BgColorBusiness {
+    background-color: #0f4327;
+    min-height: 90.3vh;
+    position: absolute;    
+    top: 70px;
+    width: 100%;
+}
+
+#tagline{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-size: 2vw;
+    color: #DBB78E;
+}
+
+#Business-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px;
+    margin-top: 0px;
+}
+
+#card-main {
+    display: flex;
+    font-family: 'Poppins', sans-serif !important;
+    flex-direction: column;
+    /* height: 400px; */
+    width: 300px;
+    gap: 20px;
+    padding: 8px;
+}
+
+#card-main img {
+    border-radius: 3px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#content h4{
+    color: #DBB78E;
+    font-family: 'Poppins', sans-serif;
+
+}
+#content p{
+    font-family: 'Poppins', sans-serif;
+}
+
+#content button {
+    font-family: 'Poppins', sans-serif;
+    padding: 4px 40px;
+    margin: 15px 5px;
+}

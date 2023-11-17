@@ -1,0 +1,81 @@
+#login-container h2,p,button,
+#login-form input,label,select,option{
+    font-family: gilroy regular;
+}
+
+#login-main-container{
+    display: flex;
+    align-items: center;
+    gap: 20vw;
+}
+
+#login-container h2{
+    margin: 5px 0px;
+}
+
+#login-left{
+    height: 90.2vh;
+    overflow: hidden;
+}
+#login-left img{
+    height: 91vh;
+    /* height: fit-content; */
+}
+
+#login-form-main{
+    display: flex;
+    justify-content: center;
+}
+
+#login-form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+#login-container p{
+    width: 80%;
+}
+
+#email{
+    padding: 10px 20px;
+    margin: 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
+
+#password{
+    padding: 10px 20px;
+    margin: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+select,option{
+    padding: 10px;
+    width: 50%;
+}
+
+#login-btn{
+    display: flex;
+    justify-content: center;
+}
+
+#login-btn button{
+    width: 97%;
+    padding: 8px 0px;
+    background-color: green;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.2vw;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#RedirectLogin{
+    display: flex;
+    width: 53%;
+    font-size: 1.2vw;
+}

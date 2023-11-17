@@ -1,0 +1,95 @@
+#SignUp-container h2,p,button,
+#SignUp-form input,label,select,option{
+    font-family: gilroy regular;
+}
+
+#SignUp-main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 20vw; */
+}
+
+#SignUp-container h2{
+    margin: 5px 0px;
+}
+
+#SignUp-left{
+    display: flex;
+    margin-left: 17vw;
+}
+
+#SignUp-right{
+    height: 90.2vh;
+    overflow: hidden;
+}
+#SignUp-right img{
+    height: 91vh;
+    margin-left: 27.2vw;
+    /* height: fit-content; */
+}
+
+#SignUp-form-main{
+    display: flex;
+    justify-content: center;
+}
+
+#SignUp-form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+#SignUp-container p{
+    width: 80%;
+}
+
+#email{
+    padding: 10px 20px;
+    margin: 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
+
+#password{
+    padding: 10px 20px;
+    margin: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+select,option{
+    padding: 10px;
+    width: 50%;
+    margin: 5px 0px;
+}
+
+#SignUp-btn{
+    display: flex;
+    justify-content: center;
+}
+
+#SignUp-btn button{
+    width: 100%;
+    padding: 8px 0px;
+    background-color: green;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.2vw;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#Redirect{
+    display: flex;
+    width: 67%;
+    font-size: 1.2vw;
+}
+
+#LoginRedirect{
+    color: black;
+    font-family: gilroy;
+    text-decoration: underline;
+}

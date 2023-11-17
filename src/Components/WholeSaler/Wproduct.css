@@ -1,0 +1,13 @@
+#Wcards{
+    border: solid 1px black;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 310px;
+}
+
+#Wimg img{
+    height: 300px;
+}

@@ -1,0 +1,26 @@
+#profile-main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile-main-container img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+#profile-main-container h3,
+#profile-main-container h4 {
+    font-size: 2.5vw;
+    line-height: 1.1;
+    font-family: gilroy regular;
+}
+
+#profile-main-container button {
+    font-size: 1.2vw;
+    padding: 10px 50px;
+    margin: 20px;
+}

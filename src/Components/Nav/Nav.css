@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: tupo vyaz;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5vw;
+    padding: 10px 35px;
+    letter-spacing: 1px;
+    background: #0C2618;
+    position: relative;
+    z-index: 111000000000000000000000;
+}
+
+#nav-left {
+    color: #DBB78E;
+    padding-right: 80px;
+}
+
+#nav-mid,
+#nav-right {
+    color: #DBB78E;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+a {
+    color: #DBB78E;
+    text-decoration: none;
+}

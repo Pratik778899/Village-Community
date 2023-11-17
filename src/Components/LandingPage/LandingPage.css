@@ -1,0 +1,37 @@
+#bg img{
+    width: 100%;
+    opacity: 0.2;
+}
+
+#bg{
+    background-color: #0d2619;
+    overflow: hidden;
+    height: 42.3rem;
+    position: fixed;
+}
+
+/* #headline{
+    color: #DBB78E;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 5vw;
+    transform: translate(-50%, -50%);
+} */
+
+#headline{
+    top: 50%;
+    left: 50%;
+    font-size: 4.5vw;
+    width: 100%;
+    line-height: 0.9;
+    display: flex;
+    color: #DBB78E;
+    filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.201));
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+}
