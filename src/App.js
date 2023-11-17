@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "./Layout";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import {
@@ -17,7 +17,7 @@ import BusinessItem from "./Components/Business/BusinessItem";
 import WorkerItem from "./Components/Worker/WorkerItem";
 
 const App = () => {
-  // const [LoginStatus, setLoginStatus] = useState(false);
+  const [LoginStatus, setLoginStatus] = useState(false);
 
   const existingUser = JSON.parse(localStorage.getItem("Loggedin")) || {};
 
@@ -44,7 +44,7 @@ const App = () => {
               )
             }
           />
-          <Route path="/Login" element={<LoginC />} />
+          <Route path="/Login" element={<LoginC setLoginStatus={setLoginStatus}/>} />
           <Route path="/SignUp" element={<SignUpC />} />
           <Route
             path="/Profile"
