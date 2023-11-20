@@ -12,12 +12,12 @@ const AddWorker = () => {
     Wlocation: "",
   });
 
-  const handleInputChange = (e) => {
+  const handleInputChange = e => {
     const { name, value } = e.target;
     setWorkerInfo({ ...workerInfo, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     let workers = JSON.parse(localStorage.getItem("workerSubmissions")) || [];
     workers.push(workerInfo);
@@ -35,9 +35,9 @@ const AddWorker = () => {
   return (
     <div id="addWorkerMain">
       <div id="addWorker">
-        {!showForm ? (
-          <button onClick={() => setShowForm(true)}>Add Worker</button>
-        ) : (
+        <button onClick={() => setShowForm(!showForm)}>Add Worker</button>
+
+        {showForm && (
           <div id="form-main">
             <form onSubmit={handleSubmit}>
               <div id="form">
@@ -101,7 +101,7 @@ const AddWorker = () => {
                 </label>
               </div>
               <div id="form">
-                <button type="submit">Add Worker</button>
+                <button type="submit">Submit</button>
               </div>
             </form>
           </div>
